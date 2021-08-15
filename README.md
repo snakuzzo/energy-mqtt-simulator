@@ -30,7 +30,6 @@ services:
   
     container_name: energy-simulator
     image: ghcr.io/snakuzzo/energy-mqtt-simulator:main
-    privileged: true
     volumes:
     - "${PWD}:/app/.env"
     environment:
