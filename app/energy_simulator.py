@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE = "./fotovoltaico.db"
+DATABASE = "./energy.db"
 MQTT_SERVER = os.getenv('MQTT_SERVER','127.0.0.1')
 MQTT_PORT = os.getenv('MQTT_PORT',1883)
 MQTT_KEEP_ALIVE = os.getenv('MQTT_KEEP_ALIVE',60)
