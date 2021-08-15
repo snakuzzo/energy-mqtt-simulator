@@ -1,0 +1,13 @@
+services:
+
+  energy-simulator:
+  
+    container_name: energy-simulator
+    image: ghcr.io/snakuzzo/energy-mqtt-simulator:main
+    privileged: true
+    volumes:
+    - "${PWD}:/app/.env"
+    environment:
+    - "TZ=Europe/Rome"
+    network_mode: host 
+    restart: unless-stopped
